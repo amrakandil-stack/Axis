@@ -1,54 +1,52 @@
 export default function Home() {
   return (
-    <div style={styles.page}>
+    <div style={styles.container}>
+      {/* HERO SECTION */}
       <section style={styles.hero}>
-        <h1 style={styles.title}>
-          Strategic Consulting for <span style={styles.highlight}>Modern Businesses</span>
-        </h1>
-
+        <h1 style={styles.title}>Axis Consulting</h1>
         <p style={styles.subtitle}>
-          Axis helps companies grow, optimize operations, and make smarter decisions
-          through data-driven strategy and expert guidance.
+          Strategic consulting to help businesses grow, transform, and succeed.
         </p>
+        <a href="/contact" style={styles.button}>
+          Get in Touch
+        </a>
+      </section>
 
-        <button style={styles.button}>Get Started</button>
+      {/* SERVICES SECTION */}
+      <section style={styles.services}>
+        <h2 style={styles.sectionTitle}>Our Services</h2>
+
+        <div style={styles.cards}>
+          <div style={styles.card}>
+            <h3>Business Strategy</h3>
+            <p>
+              Clear, actionable strategies designed to scale your business and
+              strengthen market position.
+            </p>
+          </div>
+
+          <div style={styles.card}>
+            <h3>Operational Excellence</h3>
+            <p>
+              Optimize processes, reduce inefficiencies, and improve overall
+              performance.
+            </p>
+          </div>
+
+          <div style={styles.card}>
+            <h3>Digital Transformation</h3>
+            <p>
+              Modernize your business with technology-driven solutions that
+              enable growth.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );
 }
 
 const styles = {
-  page: {
-    padding: "60px 20px",
-  },
-  hero: {
-    maxWidth: "900px",
-    margin: "0 auto",
-    textAlign: "center" as const,
-  },
-  title: {
-    fontSize: "48px",
-    fontWeight: "bold",
-    marginBottom: "20px",
-  },
-  highlight: {
-    color: "#2563eb",
-  },
-  subtitle: {
-    fontSize: "18px",
-    color: "#4b5563",
-    marginBottom: "30px",
-    lineHeight: "1.6",
-  },
-  button: {
-    padding: "14px 32px",
-    fontSize: "16px",
-    fontWeight: "bold",
-    color: "#ffffff",
-    backgroundColor: "#2563eb",
-    border: "none",
-    borderRadius: "6px",
-    cursor: "pointer",
-  },
-};
+  container: {
+    padding: "60px
 
